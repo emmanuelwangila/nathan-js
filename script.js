@@ -41,6 +41,20 @@ let arrays = [
   [8, 9, [10, 11], 12, 14],
 ];
 
+const customFlat = (arrays, depth = 1) => {
+  let result = [];
+
+  arrays.forEach((arri) => {
+    if (Array.isArray(arri) && depth > 0) {
+      result.push(...customFlat(arri, depth - 1));
+    } else {
+      result.push(arri);
+    }
+  });
+  return result;
+};
+console.log(customFlat(arrays));
+
 const flatArr = arrays.flat(2);
 const flattened = [].concat(...arrays);
 console.log(flattened);
