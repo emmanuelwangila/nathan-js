@@ -9,3 +9,8 @@ const forArray = array.forEach((arr, i) => {
 });
 
 console.log(mappedArray, forArray, array);
+
+// null and defined
+
+console.log(typeof null);
+console.log(typeof undefined);
