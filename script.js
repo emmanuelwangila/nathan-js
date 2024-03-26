@@ -61,6 +61,11 @@ console.log(flattened);
 console.log(flatArr);
 
 {
-  var tech = "Manu";
+  let tech = "Manu";
+  console.log(tech);
 }
-console.log(tech);
+
+{
+  var shule = "KU";
+}
+console.log(shule);
