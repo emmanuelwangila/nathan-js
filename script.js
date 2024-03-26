@@ -70,3 +70,21 @@ console.log(flatArr);
 }
 console.log(shule);
 //  let can be re-assigned, cont cannot , var can be assigned ...
+
+function Manu() {
+  for (var i = 0; i < 3; i++) {
+    setTimeout(function log() {
+      console.log(i);
+    }, i * 1000);
+  }
+}
+Manu();
+
+function manuTu() {
+  for (let i = 0; i < 3; i++) {
+    setTimeout(function log() {
+      console.log(i);
+    }, i * 1000);
+  }
+}
+manuTu();
