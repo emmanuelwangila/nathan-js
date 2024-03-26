@@ -42,4 +42,6 @@ let arrays = [
 ];
 
 const flatArr = arrays.flat(2);
+const flattened = [].concat(...arrays);
+console.log(flattened);
 console.log(flatArr);
