@@ -88,3 +88,21 @@ function manuTu() {
   }
 }
 manuTu();
+
+var person = {
+  name: "Emmanuel Wanjala",
+  hello: function (thing) {
+    console.log(this.name + "says Unapass" + thing);
+  },
+};
+
+const kijanaFupi = {
+  name: "Edward Rodgers",
+};
+
+person.hello.call(kijanaFupi, "unapitaa usitense");
+
+// bind
+
+const newPerson = person.hello.bind(kijanaFupi);
+newPerson("welcome to the team");
