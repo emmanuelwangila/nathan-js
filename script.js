@@ -69,3 +69,4 @@ console.log(flatArr);
   var shule = "KU";
 }
 console.log(shule);
+//  let can be re-assigned, cont cannot , var can be assigned ...
