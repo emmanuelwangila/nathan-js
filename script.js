@@ -23,3 +23,10 @@ console.log(a);
 console.log(null == undefined);
 //  tripple equals compares types and values...
 console.log(null === undefined);
+
+// event delegation jvascript
+// provide event listener to the parent and acces the child through it
+
+document.querySelector("#schools").addEventListener("click", (event) => {
+  console.log(event);
+});
